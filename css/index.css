@@ -13,6 +13,11 @@ body{
     margin-bottom: 10px;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* navbar one  */
 
 .navbar{
@@ -27,6 +32,25 @@ body{
     font-weight: bold;
     border-bottom: 1px solid rgba(128, 128, 128, 0.706);
     z-index: 100;
+}
+.menu-btn{
+    display: none;
+    align-self: center;
+    margin: auto;
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    left: 20vw;
+    
+}
+.logo-m{
+    display: none;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+    padding-left: 40px;
+    font-size: 30px;
 }
 .logo{
     padding-left: 40px;
@@ -64,7 +88,7 @@ body{
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding-left: 100px;
     position: sticky;
     top: 0;
     background-color: rgba(255, 255, 255, 0.616);
@@ -381,4 +405,85 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+
+
+
+/* media query for this page  */
+@media (min-width: 500px) and (max-width: 785px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .sign-in{
+        display: none;
+    }
+    .logo-m, .menu-btn{
+        display: none;
+    }
+    .navbar2{
+        padding-left: 40px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: left;
+    }
+    .none{
+        display: none;
+    }
+
+    .hero-title{
+        font-size: 90px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+    #about, .sec-4, .s-6-pr{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .bg2{
+        height: 120vh;
+    }
+    .sec-3{
+        margin-top: 20%;
+    }
+    .sec-4{
+        margin-bottom: 30%;
+    }
+    .img-5{
+        max-width: 40%;
+        height: auto;
+        position: relative;
+        top: 10%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .sec-5{
+        margin-top: 15vh;
+        margin-bottom: 0;
+    }
+    .bg3, .img-7{
+        display: none;
+    }
+    .img-8{
+        width: 80%;
+        height: 80vh;
+        position: relative;
+        left: 10%;
+        right: 10%;
+    }
+    .last-sec{
+        display: none;
+    }
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+        padding-left: 10%;
+    }
+
 }
